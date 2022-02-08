@@ -1,3 +1,12 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +22,7 @@
 }
 
 body {
-    background-color: hsl(217, 54%, 11%);
+    background-color: var(--Very-dark-blue-main);
 }
 
 main {
@@ -28,8 +37,8 @@ main {
 
 .container-card {
     width: 270px;
-    height: 410px;
-    background-color: hsl(216, 50%, 16%);
+    height: 440px;
+    background-color: var(--Very-dark-blue-card);
     border-radius: 15px;
 }
 
@@ -37,11 +46,69 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 62%;
+    height: 50%;
 }
 
 .img-nft {
-    width: 93%;
-    height: 93%;
-    border-radius: 15px;
+    width: 225px;
+    height: 200px;
+    border-radius: 6px;
+}
+
+h1 {
+    /* font-family: 'Outfit'; */
+    color: var(--White);
+    font-size: 16px;
+}
+
+p {
+    font-size: 13px;
+    /* font-family: 'Outfit'; */
+    color: var(--Soft-blue);
+}
+
+h1,
+h2,
+p,
+.container-author {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: 'Outfit';
+}
+
+strong {
+    color: var(--White);
+}
+
+.ether-price {
+    color: var(--Cyan);
+}
+
+.time-left {
+    color: var(--Soft-blue);
+}
+
+.container-currency {
+    display: inline-flex;
+    font-size: 9px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-author {
+    height: 84px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--Soft-blue);
+}
+
+.img-author {
+    border: 1px solid var(--White);
+    border-radius: 16px;
+    width: 30px;
+    height: 30px;
+}
+
+.text-author {
+    margin-left: 10px;
 }
