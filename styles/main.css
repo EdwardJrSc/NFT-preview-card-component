@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-card {
+    width: 270px;
+    height: 410px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+.container-img-nft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62%;
+}
+
+.img-nft {
+    width: 93%;
+    height: 93%;
+    border-radius: 15px;
+}
